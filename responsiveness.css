@@ -117,6 +117,13 @@
         background-color: #51994B;
         box-shadow: 8px 20px 15px #0000007a;
     }
+    .menu ul li a:hover {
+        color: #fff;
+    }
+    
+    .menu ul li a:focus {
+        color: #fff;
+    }
     .nav-menu.active {
         left: 0;
     }
