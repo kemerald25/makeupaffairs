@@ -14,7 +14,7 @@ a {
 
 body {
     max-width: 1440px;
-    min-width: 320px;
+    min-width: 220px;
     margin: 0 auto;
 }
 
@@ -28,9 +28,31 @@ nav {
     padding: 10px 0;
 }
 
+.nav-links {
+    transition: 0.7s ease;
+}
+
+.hambuger {
+    display: none;
+    cursor: pointer;
+}
+
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #0A4535;
+}
+
+
+
 section {
     max-width: 100%;
-    min-width: 320px;
+    min-width: 220px;
 
 }
 
@@ -41,7 +63,8 @@ section {
     align-items: center;
     margin: 0 auto;
 }
-.all-sect{
+
+.all-sect {
     width: 1100px;
     margin: 0 auto;
 }
@@ -63,13 +86,15 @@ section {
 .menu ul li a:hover {
     color: #51994B;
 }
-.menu ul li a:focus{
+
+.menu ul li a:focus {
     color: #51994B;
 }
 
 .first-sect {
     background-image: url(/img/hero\ img.svg);
-    height: 100vh;
+    height: 600px;
+    background-repeat: no-repeat;
 }
 
 .ban1 {
@@ -129,77 +154,94 @@ section {
     align-items: center;
     gap: 20px;
 }
-.third-sect{
+
+.third-sect {
     background-image: url(/img/shop.svg);
-    height: 70vh;
+    height: 400px;
     background-repeat: no-repeat;
     margin-top: 100px;
     display: flex;
     align-items: center;
 }
-.ban3{
+
+.ban3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.ban3-text{
+
+.ban3-text {
     color: #fff;
     text-align: center;
 }
-.ban3-text h2{
+
+.ban3-text h2 {
     font-weight: 400;
 }
-.ban3-text p{
+
+.ban3-text p {
     font-size: 12px;
 }
-.fourth-sect{
+
+.fourth-sect {
     margin-top: 100px;
     text-align: center;
 }
-.fourth-sect h2{
+
+.fourth-sect h2 {
     font-size: 40px;
     font-weight: 400;
 }
-.cards{
+
+.cards {
     display: flex;
     justify-content: center;
     margin-top: 50px;
     gap: 50px;
 }
-.card{
+
+.card {
     width: 200px;
 }
-.card-img-info{
+
+.card-img-info {
     width: 200px;
     height: 280px;
     background-color: #E9E3DD;
 }
-.img-tag{
+
+.img-tag {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.percent{
+
+.percent {
     border-radius: 0px 0px 10px 0px;
     background-color: #EFBD06;
     padding: 10px;
 }
-.percent p{
+
+.percent p {
     font-size: 15px;
     font-weight: 600;
 }
-.heart{
+
+.heart {
     margin-right: 10px;
 }
-.img-text h3{
+
+.img-text h3 {
     letter-spacing: -0.38px;
     font-size: 15px;
 }
-.img-text p{
+
+.img-text p {
     font-size: 25px;
     color: #0A4535;
     margin-top: 10px;
 }
+
 .btn2 {
     display: flex;
     justify-content: center;
@@ -213,54 +255,61 @@ section {
     color: #fff;
     cursor: pointer;
 }
-.btn2 button:hover{
+
+.btn2 button:hover {
     background-color: transparent;
     border: 2px solid #51994B;
     color: #000;
 }
 
-.fifth-sect{
+.fifth-sect {
     background-image: url(/img/shop.svg);
-    height: 70vh;
+    height: 400px;
     background-repeat: no-repeat;
     margin-top: 100px;
     display: flex;
     align-items: center;
 }
 
-.ban4{
+.ban4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
-.ban4-text{
+
+.ban4-text {
     color: #fff;
     text-align: center;
     width: 500px;
 }
-.ban4-text h2{
+
+.ban4-text h2 {
     font-weight: 400;
 }
-.ban4-text p{
+
+.ban4-text p {
     font-size: 15px;
 }
 
-.ban4-img{
+.ban4-img {
     width: 500px;
 }
-.ban4-img img{
+
+.ban4-img img {
     width: 100%;
 }
 
-.sixth-sect{
+.sixth-sect {
     margin-top: 100px;
 }
-.sixth-sect h2{
+
+.sixth-sect h2 {
     text-align: center;
     font-size: 40px;
     font-weight: 400;
 }
+
 .form {
     display: flex;
     justify-content: center;
@@ -272,7 +321,8 @@ section {
     padding-left: 4px;
     margin-top: 50px;
 }
-form input{
+
+form input {
     width: 350px;
     padding: 10px 0;
     border-radius: 20px;
@@ -280,7 +330,8 @@ form input{
     border: none;
     margin-right: 30px;
 }
-form button{
+
+form button {
     background-color: #51994B;
     padding: 10px 20px;
     border: none;
@@ -288,57 +339,71 @@ form button{
     border-radius: 20px;
     cursor: pointer;
 }
-.categories{
+
+.categories {
     margin-top: 70px;
 }
-.categories h2{
+
+.categories h2 {
     text-align: left;
     font-size: 20px;
     margin-left: 70px;
 }
-.card-text p{
+
+.card-text p {
     text-align: center;
     font-weight: 600;
 }
-footer{
+
+footer {
     background-image: url(/img/shop.svg);
     height: 60vh;
     margin-top: 100px;
 }
-.all-foot{
+
+.all-foot {
     padding-top: 100px;
     display: flex;
     justify-content: space-between;
 }
-.abt p{
+
+.abt p {
     color: #fff;
     font-size: 15px;
     margin-bottom: 100px;
 }
-.icons img{
+
+.icons img {
     width: 25px;
 }
-.foot p{
+
+.foot p {
     color: #fff;
 }
-.right-foot{
+
+.right-foot {
     display: flex;
     color: #fff;
     gap: 100px;
 }
-.right-foot ul li{
+
+.right-foot ul li {
     list-style-type: none;
 }
-.right-foot h3{
+
+.right-foot h3 {
     font-weight: 400;
 }
-.right-foot ul li a{
+
+.right-foot ul li a {
     color: #fff;
     font-size: 15px;
 }
-.right-foot ul a{
+
+.right-foot ul a {
     color: #fff;
 }
-.right-foot a:hover{
+
+.right-foot a:hover {
     text-decoration: underline;
 }
